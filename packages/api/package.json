@@ -1,0 +1,22 @@
+{
+  "name": "@apollo/api",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@apollo/auth": "workspace:*",
+    "@apollo/db": "workspace:*",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@apollo/config": "workspace:*",
+    "typescript": "^6.0.3"
+  }
+}
